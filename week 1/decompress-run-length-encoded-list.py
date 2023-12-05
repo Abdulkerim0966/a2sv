@@ -1,14 +1,8 @@
 class Solution:
     def decompressRLElist(self, nums: List[int]) -> List[int]:
-        left=0
-        right=left+1
-        ans=[]
-        while right<len(nums) :
-            a=[nums[right]]
-            b=a*nums[left]
-            ans.extend(b)
-            left+=2
-            right+=2
+       
+        ans=[nums[i] for i in range(1,len(nums),+2) for j in range(0,nums[i-1])]
+    
         return ans
 
 
