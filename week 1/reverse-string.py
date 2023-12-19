@@ -6,11 +6,3 @@ class Solution:
             s[lowe],s[upp]=s[upp],s[lowe]
             lowe+=1
             upp-=1
-
-
-          
-
-        """
-        Do not return anything, modify s in-place instead.
-        """
-        
