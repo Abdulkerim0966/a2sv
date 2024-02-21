@@ -8,7 +8,8 @@ class Solution:
         for i in range(len(s)):
             temp[s[i]]+=1
             if all(temp[key] == dect[key] for key in temp):
-                # print(i,n)
+               
                 ans.append((i+1)-n)
                 n=i+1
+                temp.clear()
         return ans
